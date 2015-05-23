@@ -31,7 +31,7 @@ com_crashlytics_export_strings.xml
 
 ## Eclipse
 .classpath
-.project
+#.project
 .metadata
 **/bin/
 tmp/
@@ -57,7 +57,6 @@ nb-configuration.xml
 ## Gradle
 
 .gradle
-gradle-app.setting
 build/
 
 ## OS Specific
