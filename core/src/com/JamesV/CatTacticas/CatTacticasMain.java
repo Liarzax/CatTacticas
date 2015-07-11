@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
+import com.fancypath.finding.Map;
 
 public class CatTacticasMain extends ApplicationAdapter {
 	SpriteBatch batch;
@@ -17,10 +18,12 @@ public class CatTacticasMain extends ApplicationAdapter {
 	
 	@Override
 	public void create () {
-		batch = new SpriteBatch();
-		//img = new Texture("badlogic.jpg");
-		//tile = new Tile(new Vector2(10,10));
-		world.init();
+		//batch = new SpriteBatch();
+		//world.init();
+		
+		// fancypath.finding Testing.
+		
+		Map map = new Map();
 		
 		
 	}
@@ -29,10 +32,10 @@ public class CatTacticasMain extends ApplicationAdapter {
 	public void render () {
 		Gdx.gl.glClearColor(0, 0, 0, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-		batch.begin();
+		//batch.begin();
 		
-		world.render(batch);
+		//world.render(batch);
 		
-		batch.end();
+		//batch.end();
 	}
 }
