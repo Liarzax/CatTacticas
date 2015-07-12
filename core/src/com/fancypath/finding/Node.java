@@ -17,9 +17,11 @@ public class Node {
 	
 	public Edge getEdge(Node node) {
 		for(Edge e : edges){
-			if(e.getDestNode() == node) {
-				return e;
-			}
+			if(e.getSourceNode() == this || e.getDestNode() == this){
+				if(e.getDestNode() == node || e.getSourceNode() == node) {
+					return e;
+				}
+			}	
 		}
 		return null;
 	}
